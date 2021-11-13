@@ -60,7 +60,6 @@ app.get("/", function(req, res) {
       res.render("list", {listTitle: "Today", newListItems: foundItems});
     }
   });
-
 });
 
 app.get("/:customListName", function(req, res){
@@ -83,9 +82,6 @@ app.get("/:customListName", function(req, res){
       }
     }
   });
-
-
-
 });
 
 app.post("/", function(req, res){
